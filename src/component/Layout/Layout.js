@@ -13,7 +13,6 @@ const Container = styled.div`
     display:flex;
 	flex-wrap: wrap;
 `
-
 function Layout(){
     let eightSteps = []
     let unOrderEightSteps = []
@@ -28,9 +27,9 @@ function Layout(){
         unOrderEightSteps.push(randomValue)
         eightSteps.splice(randomIndex,1)
     }
-    for(let i=0;i<=1 ;i++){
-        for(let j=0;j<=1 ;j++){
-            for(let k=0;k<=1 ;k++){
+    for(let i=0;i<=33 ;i++){
+        for(let j=0;j<=33 ;j++){
+            for(let k=0;k<=33 ;k++){
                 totalItems.push(<Item redEl={unOrderEightSteps[i]} greenEl={unOrderEightSteps[j]} blueEl={unOrderEightSteps[k]}/>);
             }
         }
@@ -38,7 +37,7 @@ function Layout(){
 
     return (
 		<Wrapper>
-			<Container><Item/></Container>
+			<Container>{totalItems}</Container>
 		</Wrapper>
         )
     }
