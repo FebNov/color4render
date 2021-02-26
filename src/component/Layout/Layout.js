@@ -36,7 +36,7 @@ function Layout(){
     }
     return (
 		<Wrapper>
-			<Container>{totalItems}</Container>
+			<Container><Item redEl={unOrderEightSteps[1]} greenEl={unOrderEightSteps[1]} blueEl={unOrderEightSteps[1]}/></Container>
 		</Wrapper>
         )
     }
