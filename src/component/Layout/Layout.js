@@ -27,14 +27,13 @@ function Layout(){
         unOrderEightSteps.push(randomValue)
         eightSteps.splice(randomIndex,1)
     }
-    for(let i=0;i<=33 ;i++){
-        for(let j=0;j<=33 ;j++){
-            for(let k=0;k<=33 ;k++){
+    for(let i=0;i< maxLength ;i++){
+        for(let j=0;j< maxLength ;j++){
+            for(let k=0;k< maxLength ;k++){
                 totalItems.push(<Item redEl={unOrderEightSteps[i]} greenEl={unOrderEightSteps[j]} blueEl={unOrderEightSteps[k]}/>);
             }
         }
     }
-
     return (
 		<Wrapper>
 			<Container>{totalItems}</Container>
