@@ -13,7 +13,7 @@ class Item extends React.Component	{
 	render(){
 		const {redEl,greenEl,blueEl} = this.state
 		return(
-			<div className = "Item" style={{backgroundCorlor:`rgb(${redEl},${greenEl},${blueEl})`}} />
+			<div className = "Item" style={{backgroundColor:`rgb(${redEl},${greenEl},${blueEl})`}}/>
 		)
 	}
 }
